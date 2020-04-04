@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  .icon {
+    color:lightcyan;
+    box-shadow: 0 0px 100px rgba(0, 4, 255, 0.5);
+    padding: 3px;
+  }
+
+
+
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../../icons/desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  }
+  
+  .joinInnerContainer {
+    width: 20%;
+  }
+  
+  .joinInput {
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 100%;
+    background: transparent;
+    border:none;
+    border: 1px solid white;
+  }
+  
+ .joinInput::placeholder {
+   color:whitesmoke;
+   letter-spacing: 0.2mm;
+ }
+
+ .joinInput[type=text] {
+   color:white;
+ }
+
+
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    text-shadow: 0 0 10px black;
+
+  }
+  
+  .button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #2b2e4a;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+      border:1px solid white;
+  }
+  
+.develop{
+  opacity: 0.8;
+  color:white;
+  margin-top:50px;
+}
+
+  .button:hover {
+    cursor: pointer;
+    background: #48466d;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../../icons/mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    }
+  
+    .joinInnerContainer {
+      width: 90%;
+    }
+    .develop{
+      opacity: 0.8;
+      color:white;
+      margin-top:50px;
+    }
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }
